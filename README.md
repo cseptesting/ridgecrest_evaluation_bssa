@@ -4,18 +4,6 @@
    1. [Cumulative M-Test Result](#cumulative_m-test_result)
    1. [Cumulative L-Test Result](#cumulative_l-test_result)
    1. [Cumulative S-Test Result](#cumulative_s-test_result)
-# Table of Contents
-1. [Comprehensive Evaluations](#comprehensive_evaluations)
-   1. [Cumulative N-Test Result](#cumulative_n-test_result)
-   1. [Cumulative M-Test Result](#cumulative_m-test_result)
-   1. [Cumulative L-Test Result](#cumulative_l-test_result)
-# Table of Contents
-1. [Comprehensive Evaluations](#comprehensive_evaluations)
-   1. [Cumulative N-Test Result](#cumulative_n-test_result)
-   1. [Cumulative M-Test Result](#cumulative_m-test_result)
-# Table of Contents
-1. [Comprehensive Evaluations](#comprehensive_evaluations)
-   1. [Cumulative N-Test Result](#cumulative_n-test_result)
 # Comprehensive Evaluations <a name="comprehensive_evaluations"></a>
 
 The following plots compare U3ETAS forecasts with the NoFaults version for about ten weeks of forecasts following the Ridgecrest sequence. For each test considered we will compare the results against the quantiles from a uniform distribution under the assumption that the p-values from independent sames of the test distribution are uniformly distributed. We also plot the p-values for each simulation in time to observe possible temporal trends.
