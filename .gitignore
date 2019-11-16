@@ -3,5 +3,4 @@
 *.out
 *.log
 *.sh
-*.pdf
 .DS_Store
