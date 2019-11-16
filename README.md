@@ -13,25 +13,25 @@ The following plots compare U3ETAS forecasts with the NoFaults version for about
 
 | | |
 | --- | --- |
-|  ![](plots/uniform_distr-n-test-mw_3p5.png.png) | ![](plots/cumulative-n-test_mw_3p5.png.png) |
+|  ![](plots/uniform_distr-n-test-mw_3p5.png) | ![](plots/cumulative-n-test_mw_3p5.png) |
 ## Cumulative M-Test Result  <a name="cumulative_m-test_result"></a>
 
 (Left) Evaluation p-values compared against uniform distribution quantiles. If observations are consistent with the test-distribution (assuming the forecast is true) the p-values should follow an exponential distribution. (Right) P-values plotted progressively during the Ridgecrest sequence. The shaded gray regions indicate critical regions assuming α = 5%.
 
 | | |
 | --- | --- |
-|  ![](plots/uniform_distr-m-test-mw_3p5.png.png) | ![](plots/cumulative-m-test_mw_3p5.png.png) |
+|  ![](plots/uniform_distr-m-test-mw_3p5.png) | ![](plots/cumulative-m-test_mw_3p5.png) |
 ## Cumulative L-Test Result  <a name="cumulative_l-test_result"></a>
 
 (Left) Evaluation p-values compared against uniform distribution quantiles. If observations are consistent with the test-distribution (assuming the forecast is true) the p-values should follow an exponential distribution. (Right) P-values plotted progressively during the Ridgecrest sequence. The shaded gray regions indicate critical regions assuming α = 5%.
 
 | | |
 | --- | --- |
-|  ![](plots/uniform_distr-l-test-mw_3p5.png.png) | ![](plots/cumulative-l-test_mw_3p5.png.png) |
+|  ![](plots/uniform_distr-l-test-mw_3p5.png) | ![](plots/cumulative-l-test_mw_3p5.png) |
 ## Cumulative S-Test Result  <a name="cumulative_s-test_result"></a>
 
 (Left) Evaluation p-values compared against uniform distribution quantiles. If observations are consistent with the test-distribution (assuming the forecast is true) the p-values should follow an exponential distribution. (Right) P-values plotted progressively during the Ridgecrest sequence. The shaded gray regions indicate critical regions assuming α = 5%.
 
 | | |
 | --- | --- |
-|  ![](plots/uniform_distr-s-test-mw_3p5.png.png) | ![](plots/cumulative-s-test_mw_3p5.png.png) |
+|  ![](plots/uniform_distr-s-test-mw_3p5.png) | ![](plots/cumulative-s-test_mw_3p5.png) |
