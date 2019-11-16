@@ -6,7 +6,7 @@
    1. [Cumulative S-Test Result](#cumulative_s-test_result)
 # Comprehensive Evaluations <a name="comprehensive_evaluations"></a>
 
-The following plots compare U3ETAS forecasts with the NoFaults version for about ten weeks of forecasts following the Ridgecrest sequence. For each test considered we will compare the results against the quantiles from a uniform distribution under the assumption that the p-values from independent sames of the test distribution are uniformly distributed. We also plot the p-values for each simulation in time to observe possible temporal trends.  
+The following plots compare U3ETAS forecasts with the NoFaults version for about ten weeks of forecasts following the Ridgecrest sequence. For each test considered we will compare the results against the quantiles from a uniform distribution under the assumption that the p-values from independent samples of the test distribution are uniformly distributed. We also plot the p-values for each simulation in time to observe possible temporal trends.  
  
 Target events with Mw > 2.5 are collected for seven days following the origin time of the forecast. Events are selected only if they occur within three fault radii from the epicenter of the mainshock of the sequence. We apply the Mc(t) model from Helmstetter et al., to account for  catalog incompleteness during the sequence.
 ## Cumulative N-Test Result  <a name="cumulative_n-test_result"></a>
