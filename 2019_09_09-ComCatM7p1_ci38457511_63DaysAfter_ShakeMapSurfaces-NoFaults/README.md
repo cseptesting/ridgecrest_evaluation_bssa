@@ -3,7 +3,7 @@
 **Simulation Start Time:** 2019-09-07 03:19:54.040000+00:00  
 **Evaluation Time:** 2019-09-14 03:19:54.040000+00:00  
 **Catalog Source:** ComCat  
-**Number Simulations:** 2500
+**Number Simulations:** 100000
 # Table of Contents
 1. [Visual Overview of Forecast](#visual_overview_of_forecast)
    1. [Cumulative Event Counts](#cumulative_event_counts)
