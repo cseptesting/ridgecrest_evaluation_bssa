@@ -3,7 +3,7 @@
 **Simulation Start Time:** 2019-07-06 03:19:54.040000+00:00  
 **Evaluation Time:** 2019-07-13 03:19:54.040000+00:00  
 **Catalog Source:** ComCat  
-**Number Simulations:** 100000
+**Number Simulations:** 2500
 # Table of Contents
 1. [Visual Overview of Forecast](#visual_overview_of_forecast)
    1. [Cumulative Event Counts](#cumulative_event_counts)
@@ -17,6 +17,10 @@
    1. [Spatial Test](#spatial_test)
 1. [One-point Statistics](#one-point_statistics)
    1. [B-Value Test](#b-value_test)
+1. [Distribution-based Tests](#distribution-based_tests)
+   1. [Inter-event Time Distribution](#inter-event_time_distribution)
+   1. [Inter-event Distance Distribution](#inter-event_distance_distribution)
+   1. [Total Earthquake Rate Distribution](#total_earthquake_rate_distribution)
 # Visual Overview of Forecast <a name="visual_overview_of_forecast"></a>
 
 These plots show qualitative comparisons between the forecast and the target catalog obtained from ComCat. Plots contain events within 7.0 days of the forecast start time and within 143.0 kilometers from the epicenter of the mainshock.  
@@ -33,11 +37,17 @@ Percentiles for cumulative event counts are aggregated within one-day bins.
 |  ![](plots/cum_counts_mw_2p5.png) | ![](plots/cum_counts_mw_3p0.png) |
 |  ![](plots/cum_counts_mw_3p5.png) | ![](plots/cum_counts_mw_4p0.png) |
 ![](plots/cum_counts_mw_4p5.png)
+
+
+
 ## Magnitude Histogram  <a name="magnitude_histogram"></a>
 
 
 
 ![](plots/mag_hist_mw_2p5.png)
+
+
+
 ## Approximate Rate Density with Observations  <a name="approximate_rate_density_with_observations"></a>
 
 
@@ -47,6 +57,9 @@ Percentiles for cumulative event counts are aggregated within one-day bins.
 |  ![](plots/crd_obs_mw_2p5.png) | ![](plots/crd_obs_mw_3p0.png) |
 |  ![](plots/crd_obs_mw_3p5.png) | ![](plots/crd_obs_mw_4p0.png) |
 ![](plots/crd_obs_mw_4p5.png)
+
+
+
 ## Conditional Rate Density  <a name="conditional_rate_density"></a>
 
 Plots are conditioned on number of target events ± 5%
@@ -57,6 +70,9 @@ Plots are conditioned on number of target events ± 5%
 |  ![](plots/cond_rates_mw_2p5.png) | ![](plots/cond_rates_mw_3p0.png) |
 |  ![](plots/cond_rates_mw_3p5.png) | ![](plots/cond_rates_mw_4p0.png) |
 ![](plots/cond_rates_mw_4p5.png)
+
+
+
 # CSEP Consistency Tests <a name="csep_consistency_tests"></a>
 
 <b>Note</b>: These tests are explained in detail by Savran et al. (In prep).
@@ -71,6 +87,9 @@ The number test compares the earthquake counts within the forecast region aginst
 |  ![](plots/n_test_mw_2p5.png) | ![](plots/n_test_mw_3p0.png) | ![](plots/n_test_mw_3p5.png) |
 |  ![](plots/n_test_mw_4p0.png) | ![](plots/n_test_mw_4p5.png) | ![](plots/n_test_mw_5p0.png) |
 |  ![](plots/n_test_mw_5p5.png) | ![](plots/n_test_mw_6p0.png) |
+
+
+
 ## Magnitude Test  <a name="magnitude_test"></a>
 
 The magnitude test computes the sum of squared residuals between normalized incremental Magnitude-Number distributions. The test distribution is built from statistics scored between individal catalogs and the expected Magnitude-Number distribution of the forecast.
@@ -80,6 +99,9 @@ The magnitude test computes the sum of squared residuals between normalized incr
 | --- | --- | --- |
 |  ![](plots/m-test_mw_2p5.png) | ![](plots/m-test_mw_3p0.png) | ![](plots/m-test_mw_3p5.png) |
 ![](plots/m-test_mw_4p0.png)
+
+
+
 ## Likelihood Test  <a name="likelihood_test"></a>
 
 The likelihood tests uses a statistic based on the continuous point-process likelihood function. We approximate the rate-density of the forecast by stacking synthetic catalogs in spatial bins. The rate-density represents the probability of observing an event selected at random from the forecast. Event log-likelihoods are aggregated for each event in the catalog. This approximation to the continuous rate-density is unconditional in the sense that it does not consider the number of target events.
@@ -89,6 +111,9 @@ The likelihood tests uses a statistic based on the continuous point-process like
 | --- | --- | --- |
 |  ![](plots/l-test_mw_2p5.png) | ![](plots/l-test_mw_3p0.png) | ![](plots/l-test_mw_3p5.png) |
 |  ![](plots/l-test_mw_4p0.png) | ![](plots/l-test_mw_4p5.png) |
+
+
+
 ## Spatial Test  <a name="spatial_test"></a>
 
 The spatial test is based on the same likelihood statistic from above. However, the scores are normalized so that differences in earthquake rates are inconsequential. As above, this statistic is unconditional.
@@ -98,6 +123,9 @@ The spatial test is based on the same likelihood statistic from above. However, 
 | --- | --- | --- |
 |  ![](plots/s-test_mw_2p5.png) | ![](plots/s-test_mw_3p0.png) | ![](plots/s-test_mw_3p5.png) |
 |  ![](plots/s-test_mw_4p0.png) | ![](plots/s-test_mw_4p5.png) |
+
+
+
 # One-point Statistics <a name="one-point_statistics"></a>
 
 
@@ -107,3 +135,33 @@ This test compares the estimated b-value from the observed catalog along with th
 
 
 ![](plots/bv_test_mw_2p5.png)
+
+
+
+# Distribution-based Tests <a name="distribution-based_tests"></a>
+
+
+## Inter-event Time Distribution  <a name="inter-event_time_distribution"></a>
+
+This test compares inter-event time distributions based on a Kilmogorov-Smirnov type statisticcomputed from the empiricial CDF.
+
+![](plots/ietd_test_mw_2p5.png)
+
+
+
+## Inter-event Distance Distribution  <a name="inter-event_distance_distribution"></a>
+
+This test compares inter-event distance distributions based on a Kilmogorov-Smirnov type statisticcomputed from the empiricial CDF.
+
+![](plots/iedd_test_mw_2p5.png)
+
+
+
+## Total Earthquake Rate Distribution  <a name="total_earthquake_rate_distribution"></a>
+
+The total earthquake rate distribution provides another form of insight into the spatial consistency of the forecast with observations. The total earthquake rate distribution is computed from the cumulative probability distribution of earthquake occurance against the earthquake rate per spatial bin.
+
+![](plots/terd_test_mw_2p5.png)
+
+
+
