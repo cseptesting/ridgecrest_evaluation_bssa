@@ -4,6 +4,9 @@
    1. [Cumulative M-Test Result](#cumulative_m-test_result)
    1. [Cumulative L-Test Result](#cumulative_l-test_result)
    1. [Cumulative S-Test Result](#cumulative_s-test_result)
+   1. [Cumulative IEDD-Test Result](#cumulative_iedd-test_result)
+   1. [Cumulative TERD-Test Result](#cumulative_terd-test_result)
+   1. [Cumulative BV-Test Result](#cumulative_bv-test_result)
 # Comprehensive Evaluations <a name="comprehensive_evaluations"></a>
 
 The following plots compare U3ETAS forecasts with the NoFaults version for about ten weeks of forecasts following the Ridgecrest sequence. For each test considered we will compare the results against the quantiles from a uniform distribution under the assumption that the p-values from independent samples of the test distribution are uniformly distributed. We also plot the p-values for each simulation in time to observe possible temporal trends.  
@@ -46,6 +49,36 @@ Target events with Mw > 2.5 are collected for seven days following the origin ti
 | | |
 | --- | --- |
 |  ![](plots/uniform_distr-s-test-mw_2p5.png) | ![](plots/cumulative-s-test_mw_2p5.png) |
+
+
+(Left) Evaluation p-values compared against uniform distribution quantiles. If observations are consistent with the test-distribution (assuming the forecast is true) the p-values should follow an exponential distribution. (Right) P-values plotted progressively during the Ridgecrest sequence. The shaded gray regions indicate critical regions assuming α = 5%.
+## Cumulative IEDD-Test Result  <a name="cumulative_iedd-test_result"></a>
+
+
+
+| | |
+| --- | --- |
+|  ![](plots/uniform_distr-iedd-test-mw_2p5.png) | ![](plots/cumulative-iedd-test_mw_2p5.png) |
+
+
+(Left) Evaluation p-values compared against uniform distribution quantiles. If observations are consistent with the test-distribution (assuming the forecast is true) the p-values should follow an exponential distribution. (Right) P-values plotted progressively during the Ridgecrest sequence. The shaded gray regions indicate critical regions assuming α = 5%.
+## Cumulative TERD-Test Result  <a name="cumulative_terd-test_result"></a>
+
+
+
+| | |
+| --- | --- |
+|  ![](plots/uniform_distr-terd-test-mw_2p5.png) | ![](plots/cumulative-terd-test_mw_2p5.png) |
+
+
+(Left) Evaluation p-values compared against uniform distribution quantiles. If observations are consistent with the test-distribution (assuming the forecast is true) the p-values should follow an exponential distribution. (Right) P-values plotted progressively during the Ridgecrest sequence. The shaded gray regions indicate critical regions assuming α = 5%.
+## Cumulative BV-Test Result  <a name="cumulative_bv-test_result"></a>
+
+
+
+| | |
+| --- | --- |
+|  ![](plots/uniform_distr-bv-test-mw_2p5.png) | ![](plots/cumulative-bv-test_mw_2p5.png) |
 
 
 (Left) Evaluation p-values compared against uniform distribution quantiles. If observations are consistent with the test-distribution (assuming the forecast is true) the p-values should follow an exponential distribution. (Right) P-values plotted progressively during the Ridgecrest sequence. The shaded gray regions indicate critical regions assuming α = 5%.
