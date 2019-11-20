@@ -121,9 +121,10 @@ The magnitude test computes the sum of squared residuals between normalized incr
 The likelihood tests uses a statistic based on the continuous point-process likelihood function. We approximate the rate-density of the forecast by stacking synthetic catalogs in spatial bins. The rate-density represents the probability of observing an event selected at random from the forecast. Event log-likelihoods are aggregated for each event in the catalog. This approximation to the continuous rate-density is unconditional in the sense that it does not consider the number of target events.
 
 
-| | |
-| --- | --- |
-|  ![](l-test.png) | ![](s-test.png) |
+| | | |
+| --- | --- | --- |
+|  ![](plots/l-test_mw_2p5.png) | ![](plots/l-test_mw_3p0.png) | ![](plots/l-test_mw_3p5.png) |
+|  ![](plots/l-test_mw_4p0.png) | ![](plots/l-test_mw_4p5.png) |
 
 
 
@@ -143,9 +144,10 @@ This test uses the probability map to build the test distribution and the observ
 The spatial test is based on the same likelihood statistic from above. However, the scores are normalized so that differences in earthquake rates are inconsequential. As above, this statistic is unconditional.
 
 
-| | |
-| --- | --- |
-|  ![](l-test.png) | ![](s-test.png) |
+| | | |
+| --- | --- | --- |
+|  ![](plots/s-test_mw_2p5.png) | ![](plots/s-test_mw_3p0.png) | ![](plots/s-test_mw_3p5.png) |
+|  ![](plots/s-test_mw_4p0.png) | ![](plots/s-test_mw_4p5.png) |
 
 
 
@@ -166,7 +168,8 @@ This test compares the estimated b-value from the observed catalog along with th
 
 ## Inter-event Time Distribution  <a name="inter-event_time_distribution"></a>
 
-This test compares inter-event time distributions based on a Kilmogorov-Smirnov type statisticcomputed from the empiricial CDF.
+This test compares inter-event time distributions based on a Kilmogorov-Smirnov type statistic computed from the empiricial CDF.
+
 
 ![](plots/ietd_test_mw_2p5.png)
 
@@ -174,7 +177,8 @@ This test compares inter-event time distributions based on a Kilmogorov-Smirnov 
 
 ## Inter-event Distance Distribution  <a name="inter-event_distance_distribution"></a>
 
-This test compares inter-event distance distributions based on a Kilmogorov-Smirnov type statisticcomputed from the empiricial CDF.
+This test compares inter-event distance distributions based on a Kilmogorov-Smirnov type statistic computed from the empiricial CDF.
+
 
 ![](plots/iedd_test_mw_2p5.png)
 
@@ -183,6 +187,7 @@ This test compares inter-event distance distributions based on a Kilmogorov-Smir
 ## Total Earthquake Rate Distribution  <a name="total_earthquake_rate_distribution"></a>
 
 The total earthquake rate distribution provides another form of insight into the spatial consistency of the forecast with observations. The total earthquake rate distribution is computed from the cumulative probability distribution of earthquake occurrence against the earthquake rate per spatial bin.
+
 
 ![](plots/terd_test_mw_2p5.png)
 
