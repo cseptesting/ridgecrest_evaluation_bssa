@@ -49,7 +49,7 @@ nofaults_files = [
 "/Users/wsavran/ProjectsNotBackedUp/ridgecrest_evaluation_bssa/2019_09_16-ComCatM7p1_ci38457511_70DaysAfter_ShakeMapSurfaces-NoFaults"
 ]
 
-tests = ['n', 'm', 'l', 's', 'iedd', 'terd', 'bv']
+tests = ['n', 'm', 'l', 's', 'iedd', 'ietd', 'prob', 'terd', 'bv']
 
 md = MarkdownReport('README.md')
 md.add_sub_heading('Comprehensive Evaluations', 1,

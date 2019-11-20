@@ -5,6 +5,8 @@
    1. [Cumulative L-Test Result](#cumulative_l-test_result)
    1. [Cumulative S-Test Result](#cumulative_s-test_result)
    1. [Cumulative IEDD-Test Result](#cumulative_iedd-test_result)
+   1. [Cumulative IETD-Test Result](#cumulative_ietd-test_result)
+   1. [Cumulative PROB-Test Result](#cumulative_prob-test_result)
    1. [Cumulative TERD-Test Result](#cumulative_terd-test_result)
    1. [Cumulative BV-Test Result](#cumulative_bv-test_result)
 # Comprehensive Evaluations <a name="comprehensive_evaluations"></a>
@@ -59,6 +61,26 @@ Target events with Mw > 2.5 are collected for seven days following the origin ti
 | | |
 | --- | --- |
 |  ![](plots/uniform_distr-iedd-test-mw_2p5.png) | ![](plots/cumulative-iedd-test_mw_2p5.png) |
+
+
+(Left) Evaluation p-values compared against uniform distribution quantiles. If observations are consistent with the test-distribution (assuming the forecast is true) the p-values should follow an exponential distribution. (Right) P-values plotted progressively during the Ridgecrest sequence. The shaded gray regions indicate critical regions assuming α = 5%.
+## Cumulative IETD-Test Result  <a name="cumulative_ietd-test_result"></a>
+
+
+
+| | |
+| --- | --- |
+|  ![](plots/uniform_distr-ietd-test-mw_2p5.png) | ![](plots/cumulative-ietd-test_mw_2p5.png) |
+
+
+(Left) Evaluation p-values compared against uniform distribution quantiles. If observations are consistent with the test-distribution (assuming the forecast is true) the p-values should follow an exponential distribution. (Right) P-values plotted progressively during the Ridgecrest sequence. The shaded gray regions indicate critical regions assuming α = 5%.
+## Cumulative PROB-Test Result  <a name="cumulative_prob-test_result"></a>
+
+
+
+| | |
+| --- | --- |
+|  ![](plots/uniform_distr-prob-test-mw_2p5.png) | ![](plots/cumulative-prob-test_mw_2p5.png) |
 
 
 (Left) Evaluation p-values compared against uniform distribution quantiles. If observations are consistent with the test-distribution (assuming the forecast is true) the p-values should follow an exponential distribution. (Right) P-values plotted progressively during the Ridgecrest sequence. The shaded gray regions indicate critical regions assuming α = 5%.
