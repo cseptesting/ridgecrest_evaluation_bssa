@@ -80,7 +80,7 @@
     "name": "ComCat",
     "region": {
         "dh": 0.025,
-        "name": "California RELM Region",
+        "name": "Generic Region",
         "polygons": [
             {
                 "lat": 37.0125,

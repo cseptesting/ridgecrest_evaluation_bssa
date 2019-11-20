@@ -10,10 +10,12 @@
    1. [Magnitude Histogram](#magnitude_histogram)
    1. [Approximate Rate Density with Observations](#approximate_rate_density_with_observations)
    1. [Conditional Rate Density](#conditional_rate_density)
+   1. [Spatial Probability Plot](#spatial_probability_plot)
 1. [CSEP Consistency Tests](#csep_consistency_tests)
    1. [Number Test](#number_test)
    1. [Magnitude Test](#magnitude_test)
    1. [Likelihood Test](#likelihood_test)
+   1. [Probability Test](#probability_test)
    1. [Spatial Test](#spatial_test)
 1. [One-point Statistics](#one-point_statistics)
    1. [B-Value Test](#b-value_test)
@@ -25,7 +27,7 @@
 
 These plots show qualitative comparisons between the forecast and the target catalog obtained from ComCat. Plots contain events within 7.0 days of the forecast start time and within 143.0 kilometers from the epicenter of the mainshock.  
   
-All catalogs are processed using a time-dependent magnitude of completeness from Helmstetter et al., 2006.
+All catalogs are processed using a time-dependent magnitude of completeness from Helmstetter et al., (2006).
 
 ## Cumulative Event Counts  <a name="cumulative_event_counts"></a>
 
@@ -71,6 +73,18 @@ Plots are conditioned on number of target events ± 5%
 
 
 
+## Spatial Probability Plot  <a name="spatial_probability_plot"></a>
+
+Probability of one or more events occuring in the spatial cells. 
+
+| | |
+| --- | --- |
+|  ![](plots/prob_obs_mw_2p5.png) | ![](plots/prob_obs_mw_3p0.png) |
+|  ![](plots/prob_obs_mw_3p5.png) | ![](plots/prob_obs_mw_4p0.png) |
+![](plots/prob_obs_mw_4p5.png)
+
+
+
 # CSEP Consistency Tests <a name="csep_consistency_tests"></a>
 
 <b>Note</b>: These tests are explained in detail by Savran et al. (In prep).
@@ -104,10 +118,20 @@ The magnitude test computes the sum of squared residuals between normalized incr
 The likelihood tests uses a statistic based on the continuous point-process likelihood function. We approximate the rate-density of the forecast by stacking synthetic catalogs in spatial bins. The rate-density represents the probability of observing an event selected at random from the forecast. Event log-likelihoods are aggregated for each event in the catalog. This approximation to the continuous rate-density is unconditional in the sense that it does not consider the number of target events.
 
 
+| | |
+| --- | --- |
+|  ![](l-test.png) | ![](s-test.png) |
+
+
+
+## Probability Test  <a name="probability_test"></a>
+
+This test uses the probability map to build the test distribution and the observed statistic. Unlike the pseudo-likelihood based tests, the test statistic is built by summing probabilities associated with cells where earthquakes occurred once. In effect,two simulations that have the exact same spatial distribution, but different numbers of events will product the same statistic.
+
 | | | |
 | --- | --- | --- |
-|  ![](plots/l-test_mw_2p5.png) | ![](plots/l-test_mw_3p0.png) | ![](plots/l-test_mw_3p5.png) |
-|  ![](plots/l-test_mw_4p0.png) | ![](plots/l-test_mw_4p5.png) |
+|  ![](plots/prob-test_mw_2p5.png) | ![](plots/prob-test_mw_3p0.png) | ![](plots/prob-test_mw_3p5.png) |
+|  ![](plots/prob-test_mw_4p0.png) | ![](plots/prob-test_mw_4p5.png) |
 
 
 
@@ -118,7 +142,7 @@ The spatial test is based on the same likelihood statistic from above. However, 
 
 | | |
 | --- | --- |
-|  ![](plots/s-test_mw_2p5.png) | ![](plots/s-test_mw_3p0.png) |
+|  ![](l-test.png) | ![](s-test.png) |
 
 
 
@@ -155,7 +179,7 @@ This test compares inter-event distance distributions based on a Kilmogorov-Smir
 
 ## Total Earthquake Rate Distribution  <a name="total_earthquake_rate_distribution"></a>
 
-The total earthquake rate distribution provides another form of insight into the spatial consistency of the forecast with observations. The total earthquake rate distribution is computed from the cumulative probability distribution of earthquake occurance against the earthquake rate per spatial bin.
+The total earthquake rate distribution provides another form of insight into the spatial consistency of the forecast with observations. The total earthquake rate distribution is computed from the cumulative probability distribution of earthquake occurrence against the earthquake rate per spatial bin.
 
 ![](plots/terd_test_mw_2p5.png)
 
