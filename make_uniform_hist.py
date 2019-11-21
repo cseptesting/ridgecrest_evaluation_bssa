@@ -18,35 +18,35 @@ mkdirs('plots')
 # this obvious hard-coding won't cut it for an "operational" prospective system. these needs to be part of an experiment manifest
 eval_basename = 'results/{}-test_mw_2p5.json'
 u3etas_files = [
-"/Users/wsavran/ProjectsNotBackedUp/ridgecrest_evaluation_bssa/2019_07_16-ComCatM7p1_ci38457511_11DaysAfter_ShakeMapSurfaces-noSpont-full_td-scale1.14",
-"/Users/wsavran/ProjectsNotBackedUp/ridgecrest_evaluation_bssa/2019_07_16-ComCatM7p1_ci38457511_7DaysAfter_ShakeMapSurfaces-noSpont-full_td-scale1.14",
-"/Users/wsavran/ProjectsNotBackedUp/ridgecrest_evaluation_bssa/2019_07_25-ComCatM7p1_ci38457511_19p6DaysAfter_ShakeMapSurfaces-noSpont-full_td-scale1.14",
-"/Users/wsavran/ProjectsNotBackedUp/ridgecrest_evaluation_bssa/2019_07_27-ComCatM7p1_ci38457511_21DaysAfter_ShakeMapSurfaces-noSpont-full_td-scale1.14",
-"/Users/wsavran/ProjectsNotBackedUp/ridgecrest_evaluation_bssa/2019_08_03-ComCatM7p1_ci38457511_28DaysAfter_ShakeMapSurfaces-noSpont-full_td-scale1.14",
-"/Users/wsavran/ProjectsNotBackedUp/ridgecrest_evaluation_bssa/2019_08_19-ComCatM7p1_ci38457511_14DaysAfter_ShakeMapSurfaces-noSpont-full_td-scale1.14",
-"/Users/wsavran/ProjectsNotBackedUp/ridgecrest_evaluation_bssa/2019_08_19-ComCatM7p1_ci38457511_35DaysAfter_ShakeMapSurfaces-noSpont-full_td-scale1.14",
-"/Users/wsavran/ProjectsNotBackedUp/ridgecrest_evaluation_bssa/2019_08_19-ComCatM7p1_ci38457511_42DaysAfter_ShakeMapSurfaces-noSpont-full_td-scale1.14",
-"/Users/wsavran/ProjectsNotBackedUp/ridgecrest_evaluation_bssa/2019_08_24-ComCatM7p1_ci38457511_49DaysAfter_ShakeMapSurfaces-noSpont-full_td-scale1.14",
-"/Users/wsavran/ProjectsNotBackedUp/ridgecrest_evaluation_bssa/2019_08_31-ComCatM7p1_ci38457511_56DaysAfter_ShakeMapSurfaces",
-"/Users/wsavran/ProjectsNotBackedUp/ridgecrest_evaluation_bssa/2019_09_04-ComCatM7p1_ci38457511_ShakeMapSurfaces",
-"/Users/wsavran/ProjectsNotBackedUp/ridgecrest_evaluation_bssa/2019_09_09-ComCatM7p1_ci38457511_63DaysAfter_ShakeMapSurfaces",
-"/Users/wsavran/ProjectsNotBackedUp/ridgecrest_evaluation_bssa/2019_09_16-ComCatM7p1_ci38457511_70DaysAfter_ShakeMapSurfaces"
+"2019_07_16-ComCatM7p1_ci38457511_11DaysAfter_ShakeMapSurfaces-noSpont-full_td-scale1.14",
+"2019_07_16-ComCatM7p1_ci38457511_7DaysAfter_ShakeMapSurfaces-noSpont-full_td-scale1.14",
+"2019_07_25-ComCatM7p1_ci38457511_19p6DaysAfter_ShakeMapSurfaces-noSpont-full_td-scale1.14",
+"2019_07_27-ComCatM7p1_ci38457511_21DaysAfter_ShakeMapSurfaces-noSpont-full_td-scale1.14",
+"2019_08_03-ComCatM7p1_ci38457511_28DaysAfter_ShakeMapSurfaces-noSpont-full_td-scale1.14",
+"2019_08_19-ComCatM7p1_ci38457511_14DaysAfter_ShakeMapSurfaces-noSpont-full_td-scale1.14",
+"2019_08_19-ComCatM7p1_ci38457511_35DaysAfter_ShakeMapSurfaces-noSpont-full_td-scale1.14",
+"2019_08_19-ComCatM7p1_ci38457511_42DaysAfter_ShakeMapSurfaces-noSpont-full_td-scale1.14",
+"2019_08_24-ComCatM7p1_ci38457511_49DaysAfter_ShakeMapSurfaces-noSpont-full_td-scale1.14",
+"2019_08_31-ComCatM7p1_ci38457511_56DaysAfter_ShakeMapSurfaces",
+"2019_09_04-ComCatM7p1_ci38457511_ShakeMapSurfaces",
+"2019_09_09-ComCatM7p1_ci38457511_63DaysAfter_ShakeMapSurfaces",
+"2019_09_16-ComCatM7p1_ci38457511_70DaysAfter_ShakeMapSurfaces"
 ]
 
 nofaults_files = [
-"/Users/wsavran/ProjectsNotBackedUp/ridgecrest_evaluation_bssa/2019_07_16-ComCatM7p1_ci38457511_11DaysAfter_ShakeMapSurfaces-noSpont-NoFaults",
-"/Users/wsavran/ProjectsNotBackedUp/ridgecrest_evaluation_bssa/2019_07_16-ComCatM7p1_ci38457511_7DaysAfter_ShakeMapSurfaces-noSpont-NoFaults",
-"/Users/wsavran/ProjectsNotBackedUp/ridgecrest_evaluation_bssa/2019_07_25-ComCatM7p1_ci38457511_19p6DaysAfter_ShakeMapSurfaces-noSpont-NoFaults",
-"/Users/wsavran/ProjectsNotBackedUp/ridgecrest_evaluation_bssa/2019_07_27-ComCatM7p1_ci38457511_21DaysAfter_ShakeMapSurfaces-noSpont-full_td-scale1.14-NoFaults",
-"/Users/wsavran/ProjectsNotBackedUp/ridgecrest_evaluation_bssa/2019_08_03-ComCatM7p1_ci38457511_28DaysAfter_ShakeMapSurfaces-noSpont-full_td-scale1.14-NoFaults",
-"/Users/wsavran/ProjectsNotBackedUp/ridgecrest_evaluation_bssa/2019_08_19-ComCatM7p1_ci38457511_14DaysAfter_ShakeMapSurfaces-noSpont-NoFaults",
-"/Users/wsavran/ProjectsNotBackedUp/ridgecrest_evaluation_bssa/2019_08_19-ComCatM7p1_ci38457511_35DaysAfter_ShakeMapSurfaces-noSpont-full_td-scale1.14-NoFaults",
-"/Users/wsavran/ProjectsNotBackedUp/ridgecrest_evaluation_bssa/2019_08_19-ComCatM7p1_ci38457511_42DaysAfter_ShakeMapSurfaces-noSpont-full_td-scale1.14-NoFaults",
-"/Users/wsavran/ProjectsNotBackedUp/ridgecrest_evaluation_bssa/2019_08_24-ComCatM7p1_ci38457511_49DaysAfter_ShakeMapSurfaces-noSpont-full_td-scale1.14-NoFaults",
-"/Users/wsavran/ProjectsNotBackedUp/ridgecrest_evaluation_bssa/2019_08_31-ComCatM7p1_ci38457511_56DaysAfter_ShakeMapSurfaces-NoFaults",
-"/Users/wsavran/ProjectsNotBackedUp/ridgecrest_evaluation_bssa/2019_09_04-ComCatM7p1_ci38457511_ShakeMapSurfaces-NoFaults",
-"/Users/wsavran/ProjectsNotBackedUp/ridgecrest_evaluation_bssa/2019_09_09-ComCatM7p1_ci38457511_63DaysAfter_ShakeMapSurfaces-NoFaults",
-"/Users/wsavran/ProjectsNotBackedUp/ridgecrest_evaluation_bssa/2019_09_16-ComCatM7p1_ci38457511_70DaysAfter_ShakeMapSurfaces-NoFaults"
+"2019_07_16-ComCatM7p1_ci38457511_11DaysAfter_ShakeMapSurfaces-noSpont-NoFaults",
+"2019_07_16-ComCatM7p1_ci38457511_7DaysAfter_ShakeMapSurfaces-noSpont-NoFaults",
+"2019_07_25-ComCatM7p1_ci38457511_19p6DaysAfter_ShakeMapSurfaces-noSpont-NoFaults",
+"2019_07_27-ComCatM7p1_ci38457511_21DaysAfter_ShakeMapSurfaces-noSpont-full_td-scale1.14-NoFaults",
+"2019_08_03-ComCatM7p1_ci38457511_28DaysAfter_ShakeMapSurfaces-noSpont-full_td-scale1.14-NoFaults",
+"2019_08_19-ComCatM7p1_ci38457511_14DaysAfter_ShakeMapSurfaces-noSpont-NoFaults",
+"2019_08_19-ComCatM7p1_ci38457511_35DaysAfter_ShakeMapSurfaces-noSpont-full_td-scale1.14-NoFaults",
+"2019_08_19-ComCatM7p1_ci38457511_42DaysAfter_ShakeMapSurfaces-noSpont-full_td-scale1.14-NoFaults",
+"2019_08_24-ComCatM7p1_ci38457511_49DaysAfter_ShakeMapSurfaces-noSpont-full_td-scale1.14-NoFaults",
+"2019_08_31-ComCatM7p1_ci38457511_56DaysAfter_ShakeMapSurfaces-NoFaults",
+"2019_09_04-ComCatM7p1_ci38457511_ShakeMapSurfaces-NoFaults",
+"2019_09_09-ComCatM7p1_ci38457511_63DaysAfter_ShakeMapSurfaces-NoFaults",
+"2019_09_16-ComCatM7p1_ci38457511_70DaysAfter_ShakeMapSurfaces-NoFaults"
 ]
 
 tests = ['n', 'm', 'l', 's', 'iedd', 'ietd', 'prob', 'terd', 'bv']
