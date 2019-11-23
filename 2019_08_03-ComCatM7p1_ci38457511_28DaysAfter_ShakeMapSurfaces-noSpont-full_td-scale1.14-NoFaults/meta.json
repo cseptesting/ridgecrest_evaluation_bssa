@@ -1,6 +1,6 @@
 {
     "catalog_file": "/home/scec-01/wsavran/working/ucerf3-ridgecrest/2019_08_03-ComCatM7p1_ci38457511_28DaysAfter_ShakeMapSurfaces-noSpont-full_td-scale1.14-NoFaults/evaluation_catalog.json",
-    "compute_time": 1574343291337,
+    "compute_time": 1574526907225,
     "eval_end_epoch": 1565407194040,
     "eval_start_epoch": 1564802394040,
     "evaluations": [
@@ -24,7 +24,7 @@
                 "/home/scec-01/wsavran/working/ucerf3-ridgecrest/2019_08_03-ComCatM7p1_ci38457511_28DaysAfter_ShakeMapSurfaces-noSpont-full_td-scale1.14-NoFaults/plots/m-test_mw_3p0"
             ],
             "name": "m-test",
-            "version": 1
+            "version": 2
         },
         {
             "fnames": {
@@ -133,6 +133,6 @@
     ],
     "forecast_file": "/home/scec-00/wsavran/working/ucerf3-ridgecrest/2019_08_03-ComCatM7p1_ci38457511_28DaysAfter_ShakeMapSurfaces-noSpont-full_td-scale1.14-NoFaults/results_complete.bin",
     "forecast_name": "UCERF3-ETAS",
-    "git_hash": "f3c92e043bc4a3296f90c24d8132912122898bd9",
+    "git_hash": "ec434ad594196cf307ea5f5fa643aef94c142109",
     "n_cat": 100000
 }

@@ -1,6 +1,6 @@
 {
     "catalog_file": "/home/scec-01/wsavran/working/ucerf3-ridgecrest/2019_09_09-ComCatM7p1_ci38457511_63DaysAfter_ShakeMapSurfaces/evaluation_catalog.json",
-    "compute_time": 1574322839962,
+    "compute_time": 1574513400529,
     "eval_end_epoch": 1568431194040,
     "eval_start_epoch": 1567826394040,
     "evaluations": [
@@ -25,7 +25,7 @@
                 "/home/scec-01/wsavran/working/ucerf3-ridgecrest/2019_09_09-ComCatM7p1_ci38457511_63DaysAfter_ShakeMapSurfaces/plots/m-test_mw_3p5"
             ],
             "name": "m-test",
-            "version": 1
+            "version": 2
         },
         {
             "fnames": {
@@ -136,6 +136,6 @@
     ],
     "forecast_file": "/home/scec-02/kmilner/ucerf3/etas_sim/2019_09_09-ComCatM7p1_ci38457511_63DaysAfter_ShakeMapSurfaces/results_complete.bin",
     "forecast_name": "UCERF3-ETAS",
-    "git_hash": "f3c92e043bc4a3296f90c24d8132912122898bd9",
+    "git_hash": "ec434ad594196cf307ea5f5fa643aef94c142109",
     "n_cat": 100000
 }
