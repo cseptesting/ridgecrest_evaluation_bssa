@@ -3,8 +3,8 @@
     "name": "IEDD-Test",
     "obs_catalog_repr": "2019-11-12 02:55:43.512139+00:00",
     "obs_name": "ComCat",
-    "observed_statistic": 0.4286021841929795,
-    "quantile": 0.99437,
+    "observed_statistic": 0.2598994422449279,
+    "quantile": 0.81891,
     "sim_name": "UCERF3-ETAS",
     "status": "Normal",
     "test_distribution": [
