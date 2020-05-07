@@ -3,3 +3,4 @@
 *.log
 *.sh
 .DS_Store
+notebooks/.ipynb*
