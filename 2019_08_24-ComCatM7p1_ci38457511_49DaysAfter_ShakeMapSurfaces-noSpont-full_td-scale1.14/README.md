@@ -25,13 +25,13 @@
    1. [Total Earthquake Rate Distribution](#total_earthquake_rate_distribution)
 # Visual Overview of Forecast <a name="visual_overview_of_forecast"></a>
 
-These plots show qualitative comparisons between the forecast and the target catalog obtained from ComCat. Plots contain events within 7.0 days of the forecast start time and within 143.0 kilometers from the epicenter of the mainshock.  
+These plots show qualitative comparisons between the forecast and the target data obtained from ComCat. Plots contain events within 7.0 days of the forecast start time and within 143.0 kilometers from the epicenter of the mainshock.  
   
-All catalogs are processed using a time-dependent magnitude of completeness from Helmstetter et al., (2006).
+All catalogs (synthetic and observed) are processed using the time-dependent magnitude of completeness model from Helmstetter et al., (2006).
 
 ## Cumulative Event Counts  <a name="cumulative_event_counts"></a>
 
-Percentiles for cumulative event counts are aggregated within one-day bins.  
+Percentiles for cumulative event counts are aggregated within one-day bins. 
 
 
 | | |
@@ -44,6 +44,7 @@ Percentiles for cumulative event counts are aggregated within one-day bins.
 
 ## Magnitude Histogram  <a name="magnitude_histogram"></a>
 
+Forecasted magnitude number distribution compared with the observed magnitude number distribution from ComCat. The forecasted number distribution in each magnitude bin is shown using a box and whisker plot. The box indicates the 95th percentile range and the whiskers indicate the minimum and maximum values. The horizontal line indicates the median.
 
 
 ![](plots/mag_hist_mw_2p5.png)
@@ -52,6 +53,7 @@ Percentiles for cumulative event counts are aggregated within one-day bins.
 
 ## Approximate Rate Density with Observations  <a name="approximate_rate_density_with_observations"></a>
 
+The approximate rate density is computed from the expected number of events within a spatial cell and normalized over the time horizon of the forecast and the area of the spatial cell.
 
 
 | | |
@@ -64,7 +66,7 @@ Percentiles for cumulative event counts are aggregated within one-day bins.
 
 ## Conditional Rate Density  <a name="conditional_rate_density"></a>
 
-Plots are conditioned on number of target events ± 5%
+Plots are conditioned on number of target events ± 5%, and can be used to create statistical tests conditioned on the number of observed events. In general, these plots will tend to be undersampled with respect to the entire distribution from the forecast.
 
 
 | | |
@@ -75,7 +77,7 @@ Plots are conditioned on number of target events ± 5%
 
 ## Spatial Probability Plot  <a name="spatial_probability_plot"></a>
 
-Probability of one or more events occuring in the spatial cells. 
+Probability of one or more events occuring in an individual spatial cell. This figure shows another way of visualizing the spatial distribution of a forecast.
 
 | | |
 | --- | --- |
@@ -87,7 +89,7 @@ Probability of one or more events occuring in the spatial cells.
 
 # CSEP Consistency Tests <a name="csep_consistency_tests"></a>
 
-<b>Note</b>: These tests are explained in detail by Savran et al. (In prep).
+<b>Note</b>: These tests are explained in detail by Savran et al., (In review).
 
 ## Number Test  <a name="number_test"></a>
 
@@ -104,7 +106,7 @@ The number test compares the earthquake counts within the forecast region aginst
 
 ## Magnitude Test  <a name="magnitude_test"></a>
 
-The magnitude test computes the sum of squared residuals between normalized incremental Magnitude-Number distributions. The test distribution is built from statistics scored between individal catalogs and the expected Magnitude-Number distribution of the forecast.
+The magnitude test computes the sum of squared residuals between normalized incremental magnitude number distributions. The test distribution is built from statistics scored between individal catalogs and the expected magnitude number distribution of the forecast.
 
 
 | | |
@@ -115,24 +117,22 @@ The magnitude test computes the sum of squared residuals between normalized incr
 
 ## Likelihood Test  <a name="likelihood_test"></a>
 
-The likelihood tests uses a statistic based on the continuous point-process likelihood function. We approximate the rate-density of the forecast by stacking synthetic catalogs in spatial bins. The rate-density represents the probability of observing an event selected at random from the forecast. Event log-likelihoods are aggregated for each event in the catalog. This approximation to the continuous rate-density is unconditional in the sense that it does not consider the number of target events.
+The likelihood tests uses a statistic based on the continuous point-process likelihood function. We approximate the rate-density of the forecast by stacking synthetic catalogs in spatial bins. The rate-density represents the probability of observing an event selected at random from the forecast. Event log-likelihoods are aggregated for each event in the catalog. This approximation to the continuous rate-density is unconditional in the sense that it does not consider the number of target events. Additionally, we do not include the magnitude component of the forecast to minimize the amount of undersampling present in these simulations.
 
 
-| | | |
-| --- | --- | --- |
-|  ![](plots/l-test_mw_2p5.png) | ![](plots/l-test_mw_3p0.png) | ![](plots/l-test_mw_3p5.png) |
-|  ![](plots/l-test_mw_4p0.png) | ![](plots/l-test_mw_4p5.png) |
+| | |
+| --- | --- |
+|  ![](plots/l-test_mw_2p5.png) | ![](plots/l-test_mw_3p0.png) |
 
 
 
 ## Probability Test  <a name="probability_test"></a>
 
-This test uses the probability map to build the test distribution and the observed statistic. Unlike the pseudo-likelihood based tests, the test statistic is built by summing probabilities associated with cells where earthquakes occurred once. In effect,two simulations that have the exact same spatial distribution, but different numbers of events will product the same statistic.
+This test uses a probability map to build the test distribution and the observed statistic. Unlike the pseudo-likelihood based tests, the test statistic is built by summing probabilities associated with cells where earthquakes occurred once. In effect,two simulations that have the exact same spatial distribution, but different numbers of events will product the same statistic.
 
-| | | |
-| --- | --- | --- |
-|  ![](plots/prob-test_mw_2p5.png) | ![](plots/prob-test_mw_3p0.png) | ![](plots/prob-test_mw_3p5.png) |
-|  ![](plots/prob-test_mw_4p0.png) | ![](plots/prob-test_mw_4p5.png) |
+| | |
+| --- | --- |
+|  ![](plots/prob-test_mw_2p5.png) | ![](plots/prob-test_mw_3p0.png) |
 
 
 

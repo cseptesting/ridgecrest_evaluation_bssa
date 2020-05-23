@@ -1,11 +1,11 @@
 {
     "min_mw": 2.5,
     "name": "TERD-Test",
-    "obs_catalog_repr": "2019-11-12 02:55:43.512139+00:00",
+    "obs_catalog_repr": "2019-11-12 02:55:43.512139",
     "obs_name": "ComCat",
     "observed_statistic": 0.0012742359014318305,
     "quantile": 0.97488,
-    "sim_name": "UCERF3-ETAS",
+    "sim_name": "U3ETAS, M7.1 + 70.0 days",
     "status": "Normal",
     "test_distribution": [
         0.0004950404207655357,

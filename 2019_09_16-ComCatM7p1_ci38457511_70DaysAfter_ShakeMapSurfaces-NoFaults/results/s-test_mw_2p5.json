@@ -1,11 +1,11 @@
 {
     "min_mw": 2.5,
     "name": "S-Test",
-    "obs_catalog_repr": "2019-11-12 02:55:43.512139+00:00",
+    "obs_catalog_repr": "2019-11-12 02:55:43.512139",
     "obs_name": "ComCat",
     "observed_statistic": 3.468428526006085,
     "quantile": 0.13801,
-    "sim_name": "UCERF3-ETAS",
+    "sim_name": "NoFaults, M7.1 + 70.0 days",
     "status": "normal",
     "test_distribution": [
         3.4108282185339442,

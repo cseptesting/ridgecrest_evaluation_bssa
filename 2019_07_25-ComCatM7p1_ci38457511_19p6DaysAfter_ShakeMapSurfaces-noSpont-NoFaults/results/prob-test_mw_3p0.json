@@ -1,11 +1,11 @@
 {
     "min_mw": 3.0,
     "name": "Prob-Test",
-    "obs_catalog_repr": "2019-11-12 02:55:43.512139+00:00",
+    "obs_catalog_repr": "2019-11-12 02:55:43.512139",
     "obs_name": "ComCat",
     "observed_statistic": -20.942762147004007,
     "quantile": 0.32856,
-    "sim_name": "UCERF3-ETAS",
+    "sim_name": "NoFaults, M7.1 + 20.0 days",
     "status": "normal",
     "test_distribution": [
         -18.927320064742336,

@@ -1,11 +1,11 @@
 {
     "min_mw": 2.5,
     "name": "BV-Test",
-    "obs_catalog_repr": "2019-11-12 02:55:43.512139+00:00",
+    "obs_catalog_repr": "2019-11-12 02:55:43.512139",
     "obs_name": "ComCat",
-    "observed_statistic": 0.9635641894724205,
-    "quantile": 0.25422,
-    "sim_name": "UCERF3-ETAS",
+    "observed_statistic": 0.9679935063469586,
+    "quantile": 0.27877,
+    "sim_name": "NoFaults, M7.1 + 7.0 days",
     "status": "Normal",
     "test_distribution": [
         1.000356103123201,

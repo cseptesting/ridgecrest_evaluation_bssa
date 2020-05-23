@@ -3,6 +3,7 @@ import json
 
 import matplotlib.pyplot as plt
 import numpy as np
+import scipy
 import seaborn as sns
 
 from csep.core.evaluations import EvaluationResult
@@ -18,9 +19,7 @@ mkdirs('plots')
 # this obvious hard-coding won't cut it for an "operational" prospective system. these needs to be part of an experiment manifest
 eval_basename = 'results/{}-test_mw_2p5.json'
 u3etas_files = [
-"2019_07_16-ComCatM7p1_ci38457511_11DaysAfter_ShakeMapSurfaces-noSpont-full_td-scale1.14",
 "2019_07_16-ComCatM7p1_ci38457511_7DaysAfter_ShakeMapSurfaces-noSpont-full_td-scale1.14",
-"2019_07_25-ComCatM7p1_ci38457511_19p6DaysAfter_ShakeMapSurfaces-noSpont-full_td-scale1.14",
 "2019_07_27-ComCatM7p1_ci38457511_21DaysAfter_ShakeMapSurfaces-noSpont-full_td-scale1.14",
 "2019_08_03-ComCatM7p1_ci38457511_28DaysAfter_ShakeMapSurfaces-noSpont-full_td-scale1.14",
 "2019_08_19-ComCatM7p1_ci38457511_14DaysAfter_ShakeMapSurfaces-noSpont-full_td-scale1.14",
@@ -34,9 +33,7 @@ u3etas_files = [
 ]
 
 nofaults_files = [
-"2019_07_16-ComCatM7p1_ci38457511_11DaysAfter_ShakeMapSurfaces-noSpont-NoFaults",
 "2019_07_16-ComCatM7p1_ci38457511_7DaysAfter_ShakeMapSurfaces-noSpont-NoFaults",
-"2019_07_25-ComCatM7p1_ci38457511_19p6DaysAfter_ShakeMapSurfaces-noSpont-NoFaults",
 "2019_07_27-ComCatM7p1_ci38457511_21DaysAfter_ShakeMapSurfaces-noSpont-full_td-scale1.14-NoFaults",
 "2019_08_03-ComCatM7p1_ci38457511_28DaysAfter_ShakeMapSurfaces-noSpont-full_td-scale1.14-NoFaults",
 "2019_08_19-ComCatM7p1_ci38457511_14DaysAfter_ShakeMapSurfaces-noSpont-NoFaults",
@@ -58,7 +55,7 @@ md.add_sub_heading('Comprehensive Evaluations', 1,
         "the p-values from independent samples of the test distribution are uniformly distributed. We also plot the p-values for each simulation "
         "in time to observe possible temporal trends.  "
         "\n \n"
-        "Target events with Mw > 2.5 are collected for seven days following the origin time of the forecast. Events are selected only if they occur within "
+        "Target events with M2.5+ are collected for seven days following the origin time of the forecast. Events are selected only if they occur within "
         "three fault radii from the epicenter of the mainshock of the sequence. We apply the Mc(t) model from Helmstetter et al., to account for "
         " catalog incompleteness during the sequence.")
 x = np.arange(0,1,0.1)
@@ -98,16 +95,29 @@ for t in tests:
     nf_combined = np.column_stack([nf_quantiles, origin_times])
     nf_combined_sorted = nf_combined[nf_combined[:,0].argsort()]
 
-    uniform_quantiles = np.arange(1, len(nf_quantiles)+1) / (len(nf_quantiles)+1)
+    # set up QQ plots and KS test
+    n = len(nf_quantiles)
+    k = np.arange(1, n+1)
+    # plotting points for uniform quantiles
+    pp = k / (n+1)
+    # compute confidence intervals for order statistics using beta distribution
+    ulow = scipy.stats.beta.ppf(0.025, k, n-k+1)
+    uhigh = scipy.stats.beta.ppf(0.975, k, n-k+1)
+    # format k-s test on the uniform quantiles
+    ks, p_u3 = scipy.stats.kstest(u3_combined_sorted[:,0], 'uniform')
+    ks, p_nf = scipy.stats.kstest(nf_combined_sorted[:,0], 'uniform')
+
 
     fig, ax = plt.subplots()
-    plt.plot(x, y, '--k')
-    im = plt.scatter(u3_combined_sorted[:,0], uniform_quantiles, c='blue', label='u3etas')
-    im = plt.scatter(nf_combined_sorted[:,0], uniform_quantiles, c='red', label='no-faults')
+    im = plt.scatter(u3_combined_sorted[:,0], pp, c='tab:blue', label='U3ETAS')
+    im = plt.scatter(nf_combined_sorted[:,0], pp, c='tab:orange', label='NoFaults')
     ax.set_ylim([0,1.05])
     ax.set_xlim([0,1.05])
-    ax.set_xlabel('p-value')
-    ax.set_ylabel('cumulative distribution')
+    ax.set_xlabel('Quantile Scores')
+    ax.set_ylabel('Standard uniform quantiles')
+    ax.plot(pp, pp, '-k')
+    ax.plot(ulow, pp, ':k')
+    ax.plot(uhigh, pp, ':k')
     ax.legend(loc='lower right')
     uc_fname = os.path.join('plots', f'uniform_distr-{t}-test-mw_2p5.pdf')
     fig.savefig(uc_fname)
@@ -117,23 +127,25 @@ for t in tests:
     nf_combined_sorted_time = nf_combined[nf_combined[:,1].argsort()]
     u3_combined_sorted_time = u3_combined[u3_combined[:,1].argsort()]
     fig, ax = plt.subplots()
-    plt.plot(nf_combined_sorted_time[:,1], nf_combined_sorted_time[:,0], '-ok', clip_on=False, zorder=10, color='red')
-    plt.plot(u3_combined_sorted_time[:,1], u3_combined_sorted_time[:,0], '-ok', clip_on=False, zorder=10, color='blue')
+    plt.plot(nf_combined_sorted_time[:,1], nf_combined_sorted_time[:,0], '-ok', clip_on=False, zorder=10, color='tab:orange')
+    plt.plot(u3_combined_sorted_time[:,1], u3_combined_sorted_time[:,0], '-ok', clip_on=False, zorder=10, color='tab:blue')
     u3_combined_sorted_time = u3_combined[u3_combined[:,1].argsort()]
 
     ax.set_xlim([0, np.max(nf_combined_sorted_time[:,1])])
     ax.set_ylim([0,1.0])
-    ax.fill_between(nf_combined_sorted_time[:,1], 0.975, 1.0, color='gray', alpha=0.4)
-    ax.fill_between(nf_combined_sorted_time[:,1], 0.025, color='gray', alpha=0.4)
-    ax.set_xlabel('days since mw 7.1 mainshock')
-    ax.set_ylabel('p-value')
+    if t == 'n':
+        ax.fill_between(nf_combined_sorted_time[:,1], 0.025, color='gray', alpha=0.4)
+    else:
+        ax.fill_between(nf_combined_sorted_time[:,1], 0.05, color='gray', alpha=0.4)
+    ax.set_xlabel('Test day (days since mw 7.1 mainshock)')
+    ax.set_ylabel('Quantile score')
     pvt_fname = os.path.join('plots', f'cumulative-{t}-test_mw_2p5.pdf')
     fig.savefig(pvt_fname)
     pvt_fname = os.path.join('plots', f'cumulative-{t}-test_mw_2p5.png')
     fig.savefig(pvt_fname)
     md.add_result_figure(f"Cumulative {t.upper()}-Test Result", 2, [uc_fname[:-4], pvt_fname[:-4]], ncols=2,
             caption="(Left) Evaluation p-values compared against uniform distribution quantiles. If observations are consistent "
-                 "with the test-distribution (assuming the forecast is true) the p-values should follow an exponential distribution. "
-                 "(Right) P-values plotted progressively during the Ridgecrest sequence. The shaded gray regions indicate critical "
+                 "with the test-distribution (assuming the forecast is true) the quantile scores should follow an exponential distribution. "
+                 "(Right) Quantile scores plotted progressively during the Ridgecrest sequence. The shaded gray regions indicate critical "
                  "regions assuming α = 5%.")
 md.finalize('./')

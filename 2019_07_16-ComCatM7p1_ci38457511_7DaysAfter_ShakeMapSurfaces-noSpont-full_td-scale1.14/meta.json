@@ -1,29 +1,29 @@
 {
-    "catalog_file": "/home/scec-01/wsavran/working/ucerf3-ridgecrest/2019_07_16-ComCatM7p1_ci38457511_7DaysAfter_ShakeMapSurfaces-noSpont-full_td-scale1.14/evaluation_catalog.json",
-    "compute_time": 1574713540441,
+    "catalog_file": "/home/scec-06/wsavran/working/ucerf3-ridgecrest/post-processing/2019_07_16-ComCatM7p1_ci38457511_7DaysAfter_ShakeMapSurfaces-noSpont-full_td-scale1.14/evaluation_catalog.json",
+    "compute_time": 1590221458319,
     "eval_end_epoch": 1563592794040,
     "eval_start_epoch": 1562987994040,
     "evaluations": [
         {
             "fnames": [
-                "/home/scec-01/wsavran/working/ucerf3-ridgecrest/2019_07_16-ComCatM7p1_ci38457511_7DaysAfter_ShakeMapSurfaces-noSpont-full_td-scale1.14/plots/n_test_mw_2p5",
-                "/home/scec-01/wsavran/working/ucerf3-ridgecrest/2019_07_16-ComCatM7p1_ci38457511_7DaysAfter_ShakeMapSurfaces-noSpont-full_td-scale1.14/plots/n_test_mw_3p0",
-                "/home/scec-01/wsavran/working/ucerf3-ridgecrest/2019_07_16-ComCatM7p1_ci38457511_7DaysAfter_ShakeMapSurfaces-noSpont-full_td-scale1.14/plots/n_test_mw_3p5",
-                "/home/scec-01/wsavran/working/ucerf3-ridgecrest/2019_07_16-ComCatM7p1_ci38457511_7DaysAfter_ShakeMapSurfaces-noSpont-full_td-scale1.14/plots/n_test_mw_4p0",
-                "/home/scec-01/wsavran/working/ucerf3-ridgecrest/2019_07_16-ComCatM7p1_ci38457511_7DaysAfter_ShakeMapSurfaces-noSpont-full_td-scale1.14/plots/n_test_mw_4p5",
-                "/home/scec-01/wsavran/working/ucerf3-ridgecrest/2019_07_16-ComCatM7p1_ci38457511_7DaysAfter_ShakeMapSurfaces-noSpont-full_td-scale1.14/plots/n_test_mw_5p0",
-                "/home/scec-01/wsavran/working/ucerf3-ridgecrest/2019_07_16-ComCatM7p1_ci38457511_7DaysAfter_ShakeMapSurfaces-noSpont-full_td-scale1.14/plots/n_test_mw_5p5",
-                "/home/scec-01/wsavran/working/ucerf3-ridgecrest/2019_07_16-ComCatM7p1_ci38457511_7DaysAfter_ShakeMapSurfaces-noSpont-full_td-scale1.14/plots/n_test_mw_6p0"
+                "/home/scec-06/wsavran/working/ucerf3-ridgecrest/post-processing/2019_07_16-ComCatM7p1_ci38457511_7DaysAfter_ShakeMapSurfaces-noSpont-full_td-scale1.14/plots/n_test_mw_2p5",
+                "/home/scec-06/wsavran/working/ucerf3-ridgecrest/post-processing/2019_07_16-ComCatM7p1_ci38457511_7DaysAfter_ShakeMapSurfaces-noSpont-full_td-scale1.14/plots/n_test_mw_3p0",
+                "/home/scec-06/wsavran/working/ucerf3-ridgecrest/post-processing/2019_07_16-ComCatM7p1_ci38457511_7DaysAfter_ShakeMapSurfaces-noSpont-full_td-scale1.14/plots/n_test_mw_3p5",
+                "/home/scec-06/wsavran/working/ucerf3-ridgecrest/post-processing/2019_07_16-ComCatM7p1_ci38457511_7DaysAfter_ShakeMapSurfaces-noSpont-full_td-scale1.14/plots/n_test_mw_4p0",
+                "/home/scec-06/wsavran/working/ucerf3-ridgecrest/post-processing/2019_07_16-ComCatM7p1_ci38457511_7DaysAfter_ShakeMapSurfaces-noSpont-full_td-scale1.14/plots/n_test_mw_4p5",
+                "/home/scec-06/wsavran/working/ucerf3-ridgecrest/post-processing/2019_07_16-ComCatM7p1_ci38457511_7DaysAfter_ShakeMapSurfaces-noSpont-full_td-scale1.14/plots/n_test_mw_5p0",
+                "/home/scec-06/wsavran/working/ucerf3-ridgecrest/post-processing/2019_07_16-ComCatM7p1_ci38457511_7DaysAfter_ShakeMapSurfaces-noSpont-full_td-scale1.14/plots/n_test_mw_5p5",
+                "/home/scec-06/wsavran/working/ucerf3-ridgecrest/post-processing/2019_07_16-ComCatM7p1_ci38457511_7DaysAfter_ShakeMapSurfaces-noSpont-full_td-scale1.14/plots/n_test_mw_6p0"
             ],
             "name": "n-test",
             "version": 1
         },
         {
             "fnames": [
-                "/home/scec-01/wsavran/working/ucerf3-ridgecrest/2019_07_16-ComCatM7p1_ci38457511_7DaysAfter_ShakeMapSurfaces-noSpont-full_td-scale1.14/plots/m-test_mw_2p5",
-                "/home/scec-01/wsavran/working/ucerf3-ridgecrest/2019_07_16-ComCatM7p1_ci38457511_7DaysAfter_ShakeMapSurfaces-noSpont-full_td-scale1.14/plots/m-test_mw_3p0",
-                "/home/scec-01/wsavran/working/ucerf3-ridgecrest/2019_07_16-ComCatM7p1_ci38457511_7DaysAfter_ShakeMapSurfaces-noSpont-full_td-scale1.14/plots/m-test_mw_3p5",
-                "/home/scec-01/wsavran/working/ucerf3-ridgecrest/2019_07_16-ComCatM7p1_ci38457511_7DaysAfter_ShakeMapSurfaces-noSpont-full_td-scale1.14/plots/m-test_mw_4p0"
+                "/home/scec-06/wsavran/working/ucerf3-ridgecrest/post-processing/2019_07_16-ComCatM7p1_ci38457511_7DaysAfter_ShakeMapSurfaces-noSpont-full_td-scale1.14/plots/m-test_mw_2p5",
+                "/home/scec-06/wsavran/working/ucerf3-ridgecrest/post-processing/2019_07_16-ComCatM7p1_ci38457511_7DaysAfter_ShakeMapSurfaces-noSpont-full_td-scale1.14/plots/m-test_mw_3p0",
+                "/home/scec-06/wsavran/working/ucerf3-ridgecrest/post-processing/2019_07_16-ComCatM7p1_ci38457511_7DaysAfter_ShakeMapSurfaces-noSpont-full_td-scale1.14/plots/m-test_mw_3p5",
+                "/home/scec-06/wsavran/working/ucerf3-ridgecrest/post-processing/2019_07_16-ComCatM7p1_ci38457511_7DaysAfter_ShakeMapSurfaces-noSpont-full_td-scale1.14/plots/m-test_mw_4p0"
             ],
             "name": "m-test",
             "version": 2
@@ -31,116 +31,116 @@
         {
             "fnames": {
                 "l-test": [
-                    "/home/scec-01/wsavran/working/ucerf3-ridgecrest/2019_07_16-ComCatM7p1_ci38457511_7DaysAfter_ShakeMapSurfaces-noSpont-full_td-scale1.14/plots/l-test_mw_2p5",
-                    "/home/scec-01/wsavran/working/ucerf3-ridgecrest/2019_07_16-ComCatM7p1_ci38457511_7DaysAfter_ShakeMapSurfaces-noSpont-full_td-scale1.14/plots/l-test_mw_3p0",
-                    "/home/scec-01/wsavran/working/ucerf3-ridgecrest/2019_07_16-ComCatM7p1_ci38457511_7DaysAfter_ShakeMapSurfaces-noSpont-full_td-scale1.14/plots/l-test_mw_3p5",
-                    "/home/scec-01/wsavran/working/ucerf3-ridgecrest/2019_07_16-ComCatM7p1_ci38457511_7DaysAfter_ShakeMapSurfaces-noSpont-full_td-scale1.14/plots/l-test_mw_4p0",
-                    "/home/scec-01/wsavran/working/ucerf3-ridgecrest/2019_07_16-ComCatM7p1_ci38457511_7DaysAfter_ShakeMapSurfaces-noSpont-full_td-scale1.14/plots/l-test_mw_4p5"
+                    "/home/scec-06/wsavran/working/ucerf3-ridgecrest/post-processing/2019_07_16-ComCatM7p1_ci38457511_7DaysAfter_ShakeMapSurfaces-noSpont-full_td-scale1.14/plots/l-test_mw_2p5",
+                    "/home/scec-06/wsavran/working/ucerf3-ridgecrest/post-processing/2019_07_16-ComCatM7p1_ci38457511_7DaysAfter_ShakeMapSurfaces-noSpont-full_td-scale1.14/plots/l-test_mw_3p0",
+                    "/home/scec-06/wsavran/working/ucerf3-ridgecrest/post-processing/2019_07_16-ComCatM7p1_ci38457511_7DaysAfter_ShakeMapSurfaces-noSpont-full_td-scale1.14/plots/l-test_mw_3p5",
+                    "/home/scec-06/wsavran/working/ucerf3-ridgecrest/post-processing/2019_07_16-ComCatM7p1_ci38457511_7DaysAfter_ShakeMapSurfaces-noSpont-full_td-scale1.14/plots/l-test_mw_4p0",
+                    "/home/scec-06/wsavran/working/ucerf3-ridgecrest/post-processing/2019_07_16-ComCatM7p1_ci38457511_7DaysAfter_ShakeMapSurfaces-noSpont-full_td-scale1.14/plots/l-test_mw_4p5"
                 ],
                 "s-test": [
-                    "/home/scec-01/wsavran/working/ucerf3-ridgecrest/2019_07_16-ComCatM7p1_ci38457511_7DaysAfter_ShakeMapSurfaces-noSpont-full_td-scale1.14/plots/s-test_mw_2p5",
-                    "/home/scec-01/wsavran/working/ucerf3-ridgecrest/2019_07_16-ComCatM7p1_ci38457511_7DaysAfter_ShakeMapSurfaces-noSpont-full_td-scale1.14/plots/s-test_mw_3p0",
-                    "/home/scec-01/wsavran/working/ucerf3-ridgecrest/2019_07_16-ComCatM7p1_ci38457511_7DaysAfter_ShakeMapSurfaces-noSpont-full_td-scale1.14/plots/s-test_mw_3p5",
-                    "/home/scec-01/wsavran/working/ucerf3-ridgecrest/2019_07_16-ComCatM7p1_ci38457511_7DaysAfter_ShakeMapSurfaces-noSpont-full_td-scale1.14/plots/s-test_mw_4p0",
-                    "/home/scec-01/wsavran/working/ucerf3-ridgecrest/2019_07_16-ComCatM7p1_ci38457511_7DaysAfter_ShakeMapSurfaces-noSpont-full_td-scale1.14/plots/s-test_mw_4p5"
+                    "/home/scec-06/wsavran/working/ucerf3-ridgecrest/post-processing/2019_07_16-ComCatM7p1_ci38457511_7DaysAfter_ShakeMapSurfaces-noSpont-full_td-scale1.14/plots/s-test_mw_2p5",
+                    "/home/scec-06/wsavran/working/ucerf3-ridgecrest/post-processing/2019_07_16-ComCatM7p1_ci38457511_7DaysAfter_ShakeMapSurfaces-noSpont-full_td-scale1.14/plots/s-test_mw_3p0",
+                    "/home/scec-06/wsavran/working/ucerf3-ridgecrest/post-processing/2019_07_16-ComCatM7p1_ci38457511_7DaysAfter_ShakeMapSurfaces-noSpont-full_td-scale1.14/plots/s-test_mw_3p5",
+                    "/home/scec-06/wsavran/working/ucerf3-ridgecrest/post-processing/2019_07_16-ComCatM7p1_ci38457511_7DaysAfter_ShakeMapSurfaces-noSpont-full_td-scale1.14/plots/s-test_mw_4p0",
+                    "/home/scec-06/wsavran/working/ucerf3-ridgecrest/post-processing/2019_07_16-ComCatM7p1_ci38457511_7DaysAfter_ShakeMapSurfaces-noSpont-full_td-scale1.14/plots/s-test_mw_4p5"
                 ]
             },
             "name": "l-test",
-            "version": 1
+            "version": 2
         },
         {
             "fnames": [
-                "/home/scec-01/wsavran/working/ucerf3-ridgecrest/2019_07_16-ComCatM7p1_ci38457511_7DaysAfter_ShakeMapSurfaces-noSpont-full_td-scale1.14/plots/cum_counts_mw_2p5",
-                "/home/scec-01/wsavran/working/ucerf3-ridgecrest/2019_07_16-ComCatM7p1_ci38457511_7DaysAfter_ShakeMapSurfaces-noSpont-full_td-scale1.14/plots/cum_counts_mw_3p0",
-                "/home/scec-01/wsavran/working/ucerf3-ridgecrest/2019_07_16-ComCatM7p1_ci38457511_7DaysAfter_ShakeMapSurfaces-noSpont-full_td-scale1.14/plots/cum_counts_mw_3p5",
-                "/home/scec-01/wsavran/working/ucerf3-ridgecrest/2019_07_16-ComCatM7p1_ci38457511_7DaysAfter_ShakeMapSurfaces-noSpont-full_td-scale1.14/plots/cum_counts_mw_4p0",
-                "/home/scec-01/wsavran/working/ucerf3-ridgecrest/2019_07_16-ComCatM7p1_ci38457511_7DaysAfter_ShakeMapSurfaces-noSpont-full_td-scale1.14/plots/cum_counts_mw_4p5"
+                "/home/scec-06/wsavran/working/ucerf3-ridgecrest/post-processing/2019_07_16-ComCatM7p1_ci38457511_7DaysAfter_ShakeMapSurfaces-noSpont-full_td-scale1.14/plots/cum_counts_mw_2p5",
+                "/home/scec-06/wsavran/working/ucerf3-ridgecrest/post-processing/2019_07_16-ComCatM7p1_ci38457511_7DaysAfter_ShakeMapSurfaces-noSpont-full_td-scale1.14/plots/cum_counts_mw_3p0",
+                "/home/scec-06/wsavran/working/ucerf3-ridgecrest/post-processing/2019_07_16-ComCatM7p1_ci38457511_7DaysAfter_ShakeMapSurfaces-noSpont-full_td-scale1.14/plots/cum_counts_mw_3p5",
+                "/home/scec-06/wsavran/working/ucerf3-ridgecrest/post-processing/2019_07_16-ComCatM7p1_ci38457511_7DaysAfter_ShakeMapSurfaces-noSpont-full_td-scale1.14/plots/cum_counts_mw_4p0",
+                "/home/scec-06/wsavran/working/ucerf3-ridgecrest/post-processing/2019_07_16-ComCatM7p1_ci38457511_7DaysAfter_ShakeMapSurfaces-noSpont-full_td-scale1.14/plots/cum_counts_mw_4p5"
             ],
             "name": "cum-plot",
             "version": 1
         },
         {
             "fnames": [
-                "/home/scec-01/wsavran/working/ucerf3-ridgecrest/2019_07_16-ComCatM7p1_ci38457511_7DaysAfter_ShakeMapSurfaces-noSpont-full_td-scale1.14/plots/mag_hist_mw_2p5"
+                "/home/scec-06/wsavran/working/ucerf3-ridgecrest/post-processing/2019_07_16-ComCatM7p1_ci38457511_7DaysAfter_ShakeMapSurfaces-noSpont-full_td-scale1.14/plots/mag_hist_mw_2p5"
             ],
             "name": "mag-hist",
             "version": 1
         },
         {
             "fnames": [
-                "/home/scec-01/wsavran/working/ucerf3-ridgecrest/2019_07_16-ComCatM7p1_ci38457511_7DaysAfter_ShakeMapSurfaces-noSpont-full_td-scale1.14/plots/crd_obs_mw_2p5",
-                "/home/scec-01/wsavran/working/ucerf3-ridgecrest/2019_07_16-ComCatM7p1_ci38457511_7DaysAfter_ShakeMapSurfaces-noSpont-full_td-scale1.14/plots/crd_obs_mw_3p0",
-                "/home/scec-01/wsavran/working/ucerf3-ridgecrest/2019_07_16-ComCatM7p1_ci38457511_7DaysAfter_ShakeMapSurfaces-noSpont-full_td-scale1.14/plots/crd_obs_mw_3p5",
-                "/home/scec-01/wsavran/working/ucerf3-ridgecrest/2019_07_16-ComCatM7p1_ci38457511_7DaysAfter_ShakeMapSurfaces-noSpont-full_td-scale1.14/plots/crd_obs_mw_4p0",
-                "/home/scec-01/wsavran/working/ucerf3-ridgecrest/2019_07_16-ComCatM7p1_ci38457511_7DaysAfter_ShakeMapSurfaces-noSpont-full_td-scale1.14/plots/crd_obs_mw_4p5"
+                "/home/scec-06/wsavran/working/ucerf3-ridgecrest/post-processing/2019_07_16-ComCatM7p1_ci38457511_7DaysAfter_ShakeMapSurfaces-noSpont-full_td-scale1.14/plots/crd_obs_mw_2p5",
+                "/home/scec-06/wsavran/working/ucerf3-ridgecrest/post-processing/2019_07_16-ComCatM7p1_ci38457511_7DaysAfter_ShakeMapSurfaces-noSpont-full_td-scale1.14/plots/crd_obs_mw_3p0",
+                "/home/scec-06/wsavran/working/ucerf3-ridgecrest/post-processing/2019_07_16-ComCatM7p1_ci38457511_7DaysAfter_ShakeMapSurfaces-noSpont-full_td-scale1.14/plots/crd_obs_mw_3p5",
+                "/home/scec-06/wsavran/working/ucerf3-ridgecrest/post-processing/2019_07_16-ComCatM7p1_ci38457511_7DaysAfter_ShakeMapSurfaces-noSpont-full_td-scale1.14/plots/crd_obs_mw_4p0",
+                "/home/scec-06/wsavran/working/ucerf3-ridgecrest/post-processing/2019_07_16-ComCatM7p1_ci38457511_7DaysAfter_ShakeMapSurfaces-noSpont-full_td-scale1.14/plots/crd_obs_mw_4p5"
             ],
             "name": "arp-plot",
             "version": 1
         },
         {
             "fnames": [
-                "/home/scec-01/wsavran/working/ucerf3-ridgecrest/2019_07_16-ComCatM7p1_ci38457511_7DaysAfter_ShakeMapSurfaces-noSpont-full_td-scale1.14/plots/prob_obs_mw_2p5",
-                "/home/scec-01/wsavran/working/ucerf3-ridgecrest/2019_07_16-ComCatM7p1_ci38457511_7DaysAfter_ShakeMapSurfaces-noSpont-full_td-scale1.14/plots/prob_obs_mw_3p0",
-                "/home/scec-01/wsavran/working/ucerf3-ridgecrest/2019_07_16-ComCatM7p1_ci38457511_7DaysAfter_ShakeMapSurfaces-noSpont-full_td-scale1.14/plots/prob_obs_mw_3p5",
-                "/home/scec-01/wsavran/working/ucerf3-ridgecrest/2019_07_16-ComCatM7p1_ci38457511_7DaysAfter_ShakeMapSurfaces-noSpont-full_td-scale1.14/plots/prob_obs_mw_4p0",
-                "/home/scec-01/wsavran/working/ucerf3-ridgecrest/2019_07_16-ComCatM7p1_ci38457511_7DaysAfter_ShakeMapSurfaces-noSpont-full_td-scale1.14/plots/prob_obs_mw_4p5"
+                "/home/scec-06/wsavran/working/ucerf3-ridgecrest/post-processing/2019_07_16-ComCatM7p1_ci38457511_7DaysAfter_ShakeMapSurfaces-noSpont-full_td-scale1.14/plots/prob_obs_mw_2p5",
+                "/home/scec-06/wsavran/working/ucerf3-ridgecrest/post-processing/2019_07_16-ComCatM7p1_ci38457511_7DaysAfter_ShakeMapSurfaces-noSpont-full_td-scale1.14/plots/prob_obs_mw_3p0",
+                "/home/scec-06/wsavran/working/ucerf3-ridgecrest/post-processing/2019_07_16-ComCatM7p1_ci38457511_7DaysAfter_ShakeMapSurfaces-noSpont-full_td-scale1.14/plots/prob_obs_mw_3p5",
+                "/home/scec-06/wsavran/working/ucerf3-ridgecrest/post-processing/2019_07_16-ComCatM7p1_ci38457511_7DaysAfter_ShakeMapSurfaces-noSpont-full_td-scale1.14/plots/prob_obs_mw_4p0",
+                "/home/scec-06/wsavran/working/ucerf3-ridgecrest/post-processing/2019_07_16-ComCatM7p1_ci38457511_7DaysAfter_ShakeMapSurfaces-noSpont-full_td-scale1.14/plots/prob_obs_mw_4p5"
             ],
             "name": "prob-plot",
             "version": 1
         },
         {
             "fnames": [
-                "/home/scec-01/wsavran/working/ucerf3-ridgecrest/2019_07_16-ComCatM7p1_ci38457511_7DaysAfter_ShakeMapSurfaces-noSpont-full_td-scale1.14/plots/prob-test_mw_2p5",
-                "/home/scec-01/wsavran/working/ucerf3-ridgecrest/2019_07_16-ComCatM7p1_ci38457511_7DaysAfter_ShakeMapSurfaces-noSpont-full_td-scale1.14/plots/prob-test_mw_3p0",
-                "/home/scec-01/wsavran/working/ucerf3-ridgecrest/2019_07_16-ComCatM7p1_ci38457511_7DaysAfter_ShakeMapSurfaces-noSpont-full_td-scale1.14/plots/prob-test_mw_3p5",
-                "/home/scec-01/wsavran/working/ucerf3-ridgecrest/2019_07_16-ComCatM7p1_ci38457511_7DaysAfter_ShakeMapSurfaces-noSpont-full_td-scale1.14/plots/prob-test_mw_4p0",
-                "/home/scec-01/wsavran/working/ucerf3-ridgecrest/2019_07_16-ComCatM7p1_ci38457511_7DaysAfter_ShakeMapSurfaces-noSpont-full_td-scale1.14/plots/prob-test_mw_4p5"
+                "/home/scec-06/wsavran/working/ucerf3-ridgecrest/post-processing/2019_07_16-ComCatM7p1_ci38457511_7DaysAfter_ShakeMapSurfaces-noSpont-full_td-scale1.14/plots/prob-test_mw_2p5",
+                "/home/scec-06/wsavran/working/ucerf3-ridgecrest/post-processing/2019_07_16-ComCatM7p1_ci38457511_7DaysAfter_ShakeMapSurfaces-noSpont-full_td-scale1.14/plots/prob-test_mw_3p0",
+                "/home/scec-06/wsavran/working/ucerf3-ridgecrest/post-processing/2019_07_16-ComCatM7p1_ci38457511_7DaysAfter_ShakeMapSurfaces-noSpont-full_td-scale1.14/plots/prob-test_mw_3p5",
+                "/home/scec-06/wsavran/working/ucerf3-ridgecrest/post-processing/2019_07_16-ComCatM7p1_ci38457511_7DaysAfter_ShakeMapSurfaces-noSpont-full_td-scale1.14/plots/prob-test_mw_4p0",
+                "/home/scec-06/wsavran/working/ucerf3-ridgecrest/post-processing/2019_07_16-ComCatM7p1_ci38457511_7DaysAfter_ShakeMapSurfaces-noSpont-full_td-scale1.14/plots/prob-test_mw_4p5"
             ],
             "name": "prob-test",
-            "version": 2
+            "version": 3
         },
         {
             "fnames": [
-                "/home/scec-01/wsavran/working/ucerf3-ridgecrest/2019_07_16-ComCatM7p1_ci38457511_7DaysAfter_ShakeMapSurfaces-noSpont-full_td-scale1.14/plots/cond_rates_mw_2p5",
-                "/home/scec-01/wsavran/working/ucerf3-ridgecrest/2019_07_16-ComCatM7p1_ci38457511_7DaysAfter_ShakeMapSurfaces-noSpont-full_td-scale1.14/plots/cond_rates_mw_3p0",
-                "/home/scec-01/wsavran/working/ucerf3-ridgecrest/2019_07_16-ComCatM7p1_ci38457511_7DaysAfter_ShakeMapSurfaces-noSpont-full_td-scale1.14/plots/cond_rates_mw_3p5",
-                "/home/scec-01/wsavran/working/ucerf3-ridgecrest/2019_07_16-ComCatM7p1_ci38457511_7DaysAfter_ShakeMapSurfaces-noSpont-full_td-scale1.14/plots/cond_rates_mw_4p0",
-                "/home/scec-01/wsavran/working/ucerf3-ridgecrest/2019_07_16-ComCatM7p1_ci38457511_7DaysAfter_ShakeMapSurfaces-noSpont-full_td-scale1.14/plots/cond_rates_mw_4p5"
+                "/home/scec-06/wsavran/working/ucerf3-ridgecrest/post-processing/2019_07_16-ComCatM7p1_ci38457511_7DaysAfter_ShakeMapSurfaces-noSpont-full_td-scale1.14/plots/cond_rates_mw_2p5",
+                "/home/scec-06/wsavran/working/ucerf3-ridgecrest/post-processing/2019_07_16-ComCatM7p1_ci38457511_7DaysAfter_ShakeMapSurfaces-noSpont-full_td-scale1.14/plots/cond_rates_mw_3p0",
+                "/home/scec-06/wsavran/working/ucerf3-ridgecrest/post-processing/2019_07_16-ComCatM7p1_ci38457511_7DaysAfter_ShakeMapSurfaces-noSpont-full_td-scale1.14/plots/cond_rates_mw_3p5",
+                "/home/scec-06/wsavran/working/ucerf3-ridgecrest/post-processing/2019_07_16-ComCatM7p1_ci38457511_7DaysAfter_ShakeMapSurfaces-noSpont-full_td-scale1.14/plots/cond_rates_mw_4p0",
+                "/home/scec-06/wsavran/working/ucerf3-ridgecrest/post-processing/2019_07_16-ComCatM7p1_ci38457511_7DaysAfter_ShakeMapSurfaces-noSpont-full_td-scale1.14/plots/cond_rates_mw_4p5"
             ],
             "name": "carp-plot",
             "version": 1
         },
         {
             "fnames": [
-                "/home/scec-01/wsavran/working/ucerf3-ridgecrest/2019_07_16-ComCatM7p1_ci38457511_7DaysAfter_ShakeMapSurfaces-noSpont-full_td-scale1.14/plots/terd_test_mw_2p5"
+                "/home/scec-06/wsavran/working/ucerf3-ridgecrest/post-processing/2019_07_16-ComCatM7p1_ci38457511_7DaysAfter_ShakeMapSurfaces-noSpont-full_td-scale1.14/plots/terd_test_mw_2p5"
             ],
             "name": "terd-test",
             "version": 2
         },
         {
             "fnames": [
-                "/home/scec-01/wsavran/working/ucerf3-ridgecrest/2019_07_16-ComCatM7p1_ci38457511_7DaysAfter_ShakeMapSurfaces-noSpont-full_td-scale1.14/plots/iedd_test_mw_2p5"
+                "/home/scec-06/wsavran/working/ucerf3-ridgecrest/post-processing/2019_07_16-ComCatM7p1_ci38457511_7DaysAfter_ShakeMapSurfaces-noSpont-full_td-scale1.14/plots/iedd_test_mw_2p5"
             ],
             "name": "iedd-test",
             "version": 2
         },
         {
             "fnames": [
-                "/home/scec-01/wsavran/working/ucerf3-ridgecrest/2019_07_16-ComCatM7p1_ci38457511_7DaysAfter_ShakeMapSurfaces-noSpont-full_td-scale1.14/plots/ietd_test_mw_2p5"
+                "/home/scec-06/wsavran/working/ucerf3-ridgecrest/post-processing/2019_07_16-ComCatM7p1_ci38457511_7DaysAfter_ShakeMapSurfaces-noSpont-full_td-scale1.14/plots/ietd_test_mw_2p5"
             ],
             "name": "ietd-test",
             "version": 2
         },
         {
             "fnames": [
-                "/home/scec-01/wsavran/working/ucerf3-ridgecrest/2019_07_16-ComCatM7p1_ci38457511_7DaysAfter_ShakeMapSurfaces-noSpont-full_td-scale1.14/plots/bv_test_mw_2p5"
+                "/home/scec-06/wsavran/working/ucerf3-ridgecrest/post-processing/2019_07_16-ComCatM7p1_ci38457511_7DaysAfter_ShakeMapSurfaces-noSpont-full_td-scale1.14/plots/bv_test_mw_2p5"
             ],
             "name": "bv-test",
             "version": 2
         }
     ],
     "forecast_file": "/home/scec-02/kmilner/ucerf3/etas_sim/2019_07_16-ComCatM7p1_ci38457511_7DaysAfter_ShakeMapSurfaces-noSpont-full_td-scale1.14/results_complete.bin",
-    "forecast_name": "UCERF3-ETAS",
-    "git_hash": "cca31aaa0655394a3067105f3d05d0cd3769d996",
+    "forecast_name": "U3ETAS, M7.1 + 7.0 days",
+    "git_hash": "bbeb2505f97cb4ab26201743c3f8328407ecca5c",
     "n_cat": 100000
 }

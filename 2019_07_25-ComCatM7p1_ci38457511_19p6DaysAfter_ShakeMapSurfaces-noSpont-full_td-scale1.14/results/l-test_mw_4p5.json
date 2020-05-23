@@ -1,11 +1,11 @@
 {
     "min_mw": 4.5,
     "name": "L-Test",
-    "obs_catalog_repr": "2019-11-12 02:55:43.512139+00:00",
+    "obs_catalog_repr": "2019-11-12 02:55:43.512139",
     "obs_name": "ComCat",
     "observed_statistic": 1.5612783673178525,
     "quantile": 0.53165,
-    "sim_name": "UCERF3-ETAS",
+    "sim_name": "U3ETAS, M7.1 + 20.0 days",
     "status": "normal",
     "test_distribution": [
         2.019626893337482,
