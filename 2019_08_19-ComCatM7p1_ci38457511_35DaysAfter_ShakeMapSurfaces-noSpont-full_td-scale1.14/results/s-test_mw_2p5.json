@@ -3,8 +3,8 @@
     "name": "S-Test",
     "obs_catalog_repr": "2019-11-12 02:55:43.512139",
     "obs_name": "ComCat",
-    "observed_statistic": 4.679455368669585,
-    "quantile": 0.99936,
+    "observed_statistic": 3.845443894445246,
+    "quantile": 0.01797,
     "sim_name": "U3ETAS, M7.1 + 35.0 days",
     "status": "undersampled",
     "test_distribution": [
