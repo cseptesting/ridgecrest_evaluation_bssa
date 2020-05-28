@@ -1,6 +1,6 @@
 {
     "catalog_file": "/home/scec-06/wsavran/working/ucerf3-ridgecrest/2019_08_19-ComCatM7p1_ci38457511_14DaysAfter_ShakeMapSurfaces-noSpont-NoFaults/evaluation_catalog.json",
-    "compute_time": 1590443839146,
+    "compute_time": 1590636268741,
     "eval_end_epoch": 1564197594040,
     "eval_start_epoch": 1563592794040,
     "evaluations": [
@@ -26,7 +26,7 @@
                 "/home/scec-06/wsavran/working/ucerf3-ridgecrest/post-processing/2019_08_19-ComCatM7p1_ci38457511_14DaysAfter_ShakeMapSurfaces-noSpont-NoFaults/plots/m-test_mw_4p0"
             ],
             "name": "m-test",
-            "version": 2
+            "version": 3
         },
         {
             "fnames": {
@@ -46,7 +46,7 @@
                 ]
             },
             "name": "l-test",
-            "version": 3
+            "version": 4
         },
         {
             "fnames": [
@@ -141,6 +141,6 @@
     ],
     "forecast_file": "/home/scec-00/wsavran/working/ucerf3-ridgecrest/2019_08_19-ComCatM7p1_ci38457511_14DaysAfter_ShakeMapSurfaces-noSpont-NoFaults/results_complete.bin",
     "forecast_name": "NoFaults, M7.1 + 14.0 days",
-    "git_hash": "ee61adb8533b8313e6d090e505bcc2f718c9594d",
+    "git_hash": "6a9ded9f10888f61db08f519c100fadc3f538f35",
     "n_cat": 100000
 }
