@@ -111,7 +111,7 @@ The magnitude test computes the sum of squared residuals between normalized incr
 
 | | |
 | --- | --- |
-|  ![](plots/m-test_mw_2p5.png) | ![](plots/m-test_mw_3p0.png) |
+|  ![](plots/m-test_mw_2p5_dmag0p1.png) | ![](plots/m-test_mw_3p0_dmag0p1.png) |
 
 
 

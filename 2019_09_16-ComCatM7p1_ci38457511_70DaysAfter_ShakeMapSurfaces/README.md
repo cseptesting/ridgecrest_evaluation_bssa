@@ -69,7 +69,9 @@ The approximate rate density is computed from the expected number of events with
 Plots are conditioned on number of target events ± 5%, and can be used to create statistical tests conditioned on the number of observed events. In general, these plots will tend to be undersampled with respect to the entire distribution from the forecast.
 
 
-![](plots/cond_rates_mw_2p5.png)
+| | |
+| --- | --- |
+|  ![](plots/cond_rates_mw_2p5.png) | ![](plots/cond_rates_mw_3p0.png) |
 
 
 
@@ -107,7 +109,9 @@ The number test compares the earthquake counts within the forecast region aginst
 The magnitude test computes the sum of squared residuals between normalized incremental magnitude number distributions. The test distribution is built from statistics scored between individal catalogs and the expected magnitude number distribution of the forecast.
 
 
-![](plots/m-test_mw_2p5.png)
+| | |
+| --- | --- |
+|  ![](plots/m-test_mw_2p5_dmag0p1.png) | ![](plots/m-test_mw_3p0_dmag0p1.png) |
 
 
 
